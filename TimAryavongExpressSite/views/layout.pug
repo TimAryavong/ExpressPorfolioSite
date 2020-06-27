@@ -3,5 +3,20 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/main.css')
+    a(href='/')
+        |Home
+    |  | 
+    a(href='/pages/about')
+        |About
+    |  | 
+    a(href='/pages/projects')
+        |Projects
+    |  | 
+    a(href='/pages/services')
+        |Services
+    |  | 
+    a(href='/pages/contact')
+        |Contact
+
   body
     block content

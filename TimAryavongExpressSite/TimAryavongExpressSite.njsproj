@@ -30,18 +30,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
-    <Content Include="routes\home.js" />
+    <Content Include="routes\index.js" />
     <Content Include="routes\pages.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
-    <Content Include="views\contact.pug" />
-    <Content Include="views\services.pug" />
-    <Content Include="views\projects.pug" />
-    <Content Include="views\about.pug">
+    <Content Include="views\page.pug">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\index.pug" />
+    <Content Include="views\home.pug" />
     <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
   </ItemGroup>
