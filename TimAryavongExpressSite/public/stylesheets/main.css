@@ -1,8 +1,22 @@
 body {
+    background-image: url("../images/skyocean.jpg");
+    background-position: center;
     padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+div.links{
+    width: 125px;
+    float: left;
+}
+
+.content {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
 a {
-    color: #00B7FF;
+    color: black !important;
+    display: block;
 }
