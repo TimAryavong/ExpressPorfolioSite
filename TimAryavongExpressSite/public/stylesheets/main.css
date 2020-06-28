@@ -2,7 +2,7 @@ body {
   background-image: url("../images/skyocean.jpg");
   background-position: center;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/*  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
 .container{
@@ -10,24 +10,25 @@ body {
 }
 
 div.links {
-/*  position: absolute;*/
   width: 125px;
   float: left;
 }
 /*.pageContents {
-  font-size: 1rem;
+  color: 
 }*/
 
-.pageHeader, .homeHeader, .pageContents {
+.pageHeader, .homeHeader, .pageContents{
   background-color: rgba(49, 119, 190, 0.7);
   float: left;
   margin-left: 1rem;
   padding: 10px;
+  font-weight: 400 !important;
 }
 
 a {
   color: black !important;
   display: block;
+  font-weight: 400;
 }
 
 h1 {

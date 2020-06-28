@@ -1,8 +1,8 @@
 extends layout
 
 block content
-    div(class='pageContents')
-      if (page.title === 'Contact Tim')
+    div(class='pageContents lead')
+      if (page.title == 'Contact Tim')
         p= page.content
         p email: #{page.email}
         p phone: #{page.phone}

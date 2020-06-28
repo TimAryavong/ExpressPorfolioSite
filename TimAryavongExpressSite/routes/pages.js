@@ -7,7 +7,7 @@ router.get('/about', function (req, res) {
   res.render('page', {
     page: {
       title: 'About Tim',
-      content: 'So you want to know more?'
+      content: 'So you want to know more?(write a smol blurb)'
     }
   }); // renders about.pug
 });
@@ -15,7 +15,7 @@ router.get('/projects', function (req, res) {
   res.render('page', {
     page: {
       title: 'Projects',
-      content: 'So you want to know about projects?'
+      content: 'So you want to know about projects?(link to github? upload something?)'
     }
   }); // renders about.pug
 });
@@ -23,7 +23,7 @@ router.get('/services', function (req, res) {
   res.render('page', {
     page: {
       title: 'Services',
-      content: 'So you want to know about services?'
+      content: 'So you want to know about services?(what can I do?)'
     }
   }); // renders about.pug
 });

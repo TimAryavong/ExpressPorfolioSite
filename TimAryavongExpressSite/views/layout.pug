@@ -5,17 +5,17 @@ html
     link(rel='stylesheet', href='/stylesheets/main.css')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
   body
-    h1= page.title
+    h1(class='display-3')= page.title
     div(class='links')
       ul(class='list-group')
-        li(class='list-group-item list-group-item-dark')
+        li(class='list-group-item list-group-item-primary')
           a(href='/') Home
         li(class='list-group-item list-group-item-dark')
           a(href='/pages/about') About
-        li(class='list-group-item list-group-item-dark')
+        li(class='list-group-item list-group-item-primary')
           a( href='/pages/projects') Projects
         li(class='list-group-item list-group-item-dark')
           a(href='/pages/services') Services
-        li(class='list-group-item list-group-item-dark')
+        li(class='list-group-item list-group-item-primary')
           a(href='/pages/contact') Contact
     block content
