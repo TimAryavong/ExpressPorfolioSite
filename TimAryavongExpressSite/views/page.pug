@@ -1,15 +1,10 @@
 extends layout
 
 block content
-
     div(class='pageContents')
-      if page.title == 'About Tim' 
-        p #{page.content}
-      if page.title == 'Projects'
-        p #{page.content}
-      if page.title == 'Services'
-        p #{page.content}
       if (page.title === 'Contact Tim')
-        p #{page.content}
+        p= page.content
         p email: #{page.email}
         p phone: #{page.phone}
+      else
+        p= page.content
