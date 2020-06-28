@@ -1,22 +1,38 @@
 body {
-    background-image: url("../images/skyocean.jpg");
-    background-position: center;
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/skyocean.jpg");
+  background-position: center;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-div.links{
-    width: 125px;
-    float: left;
+.container{
+  padding: 50px;
 }
 
-.content {
-    float: left;
-    margin: 10px;
-    padding: 10px;
+div.links {
+/*  position: absolute;*/
+  width: 125px;
+  float: left;
+}
+/*.pageContents {
+  font-size: 1rem;
+}*/
+
+.pageHeader, .homeHeader, .pageContents {
+  background-color: rgba(49, 119, 190, 0.7);
+  float: left;
+  margin-left: 1rem;
+  padding: 10px;
 }
 
 a {
-    color: black !important;
-    display: block;
+  color: black !important;
+  display: block;
 }
+
+h1 {
+  background-color: rgba(49, 119, 190, 0.7);
+  margin-bottom: 3rem !important;
+  padding: .75rem 1.25rem !important;
+}
+
