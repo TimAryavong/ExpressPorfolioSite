@@ -1,4 +1,5 @@
 body {
+  display: block;
   background-image: url("../images/skyocean.jpg");
   background-position: center;
   padding: 50px;
@@ -37,7 +38,9 @@ h1 {
   padding: .75rem 1.25rem !important;
 }
 
-p {
-
+footer {
+  position: relative;
+  float: left;
+  width: 100%;
 }
 

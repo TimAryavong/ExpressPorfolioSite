@@ -30,29 +30,31 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="models\Contact.js" />
     <Content Include="public\images\skyline.jpg" />
     <Content Include="public\images\darkness.jpg" />
     <Content Include="public\images\pictureframes.jpg" />
     <Content Include="public\images\skyocean.jpg" />
     <Content Include="routes\index.js" />
-    <Content Include="routes\pages.js" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\page.pug">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="views\home.pug" />
-    <Content Include="views\layout.pug" />
     <Content Include="views\error.pug" />
+    <Content Include="views\partials\footer.pug" />
+    <Content Include="views\partials\header.pug" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="models\" />
     <Folder Include="public\" />
     <Folder Include="public\javascripts\" />
     <Folder Include="public\images\" />
     <Folder Include="public\stylesheets\" />
     <Folder Include="routes\" />
     <Folder Include="views\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>

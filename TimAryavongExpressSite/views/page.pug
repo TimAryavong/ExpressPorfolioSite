@@ -1,4 +1,4 @@
-extends layout
+extends partials/header
 
 block content
     div(class='pageContents lead')
@@ -8,3 +8,4 @@ block content
         p phone: #{page.phone}
       else
         p= page.content
+    include partials/footer

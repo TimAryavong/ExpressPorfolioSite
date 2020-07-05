@@ -7,8 +7,26 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose'); // requires our npm mongoose package
+const uri = "mongodb+srv://root:admin@cluster0-0wwxc.mongodb.net/test?retryWrites=true&w=majority";
+
+try {
+  mongoose.connect(uri, { useNewUrlParser: true }); // uri means Uniform Resource Identifier
+  var db = mongoose.connection;
+  db.on('error', function (err) { // on an error
+    console.log(err);
+  })
+  db.once('open', function (callback) {
+    console.log('Connected to MongoDB');
+  })
+}
+catch (err) {
+  consol.log("Error: " + err);
+}
+
+var routes = require('./routes/index');
 var routes = require('./routes');
-var pageRoutes = require('./routes/pages');
+
 
 var app = express();
 
@@ -25,7 +43,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/pages', pageRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
