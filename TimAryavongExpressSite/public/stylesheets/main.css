@@ -14,9 +14,6 @@ div.links {
   width: 125px;
   float: left;
 }
-/*.pageContents {
-  color: 
-}*/
 
 .pageHeader, .homeHeader, .pageContents{
   background-color: rgba(49, 119, 190, 0.7);

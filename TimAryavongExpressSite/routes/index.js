@@ -49,13 +49,11 @@ router.get('/contact', function (req, res) {
 });
 
 router.post('/contact', function (req, res) {
-  const contact = new ContactModel({
-    name: {
-      first: req.body.nameFirst,
-      last: req.body.nameLast
-    },
-    email: req.body.email,
-    phone: req.body.phone
-  })
-})
+  const contact = new ContactModel({ name: { first: req.body.nameFirst, last: req.body.nameLast }, email: req.body.email, phone: req.body.phone });
+  contact.save(function (err) {
+    if (err) console.log(err);
+    res.redirect('/contact');
+  });
+});
+
 module.exports = router;

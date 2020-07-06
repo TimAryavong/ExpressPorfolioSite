@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose'); // requires our npm mongoose package
-const uri = "mongodb+srv://root:admin@cluster0-0wwxc.mongodb.net/test?retryWrites=true&w=majority";
+const uri = "mongodb+srv://root:admin@cluster0-0wwxc.mongodb.net/PortfolioDB?retryWrites=true&w=majority";
 
 try {
   mongoose.connect(uri, { useNewUrlParser: true }); // uri means Uniform Resource Identifier

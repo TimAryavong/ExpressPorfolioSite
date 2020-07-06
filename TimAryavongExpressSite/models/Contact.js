@@ -28,7 +28,7 @@ const ContactSchema = new mongoose.Schema({
 });
 
 // Create and instantiate model with schema
-const Articles = mongoose.model("Contact", ContactSchema);
+const Contact = mongoose.model("Contacts", ContactSchema);
 
 // export schema
-module.exports = Articles;
+module.exports = Contact;
